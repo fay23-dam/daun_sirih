@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".daftar_penyakit"
+    android:background="@drawable/screen">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCenter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/shadowdeteksi"
+            android:gravity="center_vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/path19"
+                android:contentDescription="Disease Icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="JENIS PENYAKIT"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+            <ScrollView
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="16dp"
+                android:text="Bercak Daun Sirih"
+                android:textColor="#000000"
+                android:fontFamily="@font/fenixregular"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_marginHorizontal="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/a_1"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="16dp"
+                android:text="Cara Mengatasi"
+                android:textColor="#000000"
+                android:fontFamily="@font/fenixregular"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/bercakdaunsirih"
+                android:layout_marginBottom="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="16dp"
+                android:text=".."
+                android:textColor="#000000"
+                android:fontFamily="@font/fenixregular"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="16dp"
+                android:text="Layu Bakteri"
+                android:textColor="#000000"
+                android:fontFamily="@font/fenixregular"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_marginHorizontal="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/a_2"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="16dp"
+                android:text="Cara Mengatasi"
+                android:textColor="#000000"
+                android:fontFamily="@font/fenixregular"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/layubakteri"
+                android:layout_marginBottom="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="16dp"
+                android:text=".."
+                android:textColor="#000000"
+                android:fontFamily="@font/fenixregular"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="16dp"
+                android:text="Busuk Pangkal Batang"
+                android:textColor="#000000"
+                android:fontFamily="@font/fenixregular"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_marginHorizontal="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/a_3"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="16dp"
+                android:text="Cara Mengatasi"
+                android:textColor="#000000"
+                android:fontFamily="@font/fenixregular"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/busukpangkalbatang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="16dp"
+                android:text=".."
+                android:textColor="#000000"
+                android:fontFamily="@font/fenixregular"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+            </ScrollView>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

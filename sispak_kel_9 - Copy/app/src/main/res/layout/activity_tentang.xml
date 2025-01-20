@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tentang"
+    android:background="@drawable/screen">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCenter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shadowdeteksi"
+            android:gravity="center_vertical"
+
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="Disease Icon"
+                android:src="@drawable/path20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="TENTANG"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/fenixregular"
+                    android:text="Aplikasi Dapat Digunakan Untuk"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="359dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text="- Bacterial Leaf Disease (bercak daun sirih)\n- Dried Leaf (layu bakteri)\n- Fungal Brown Spot Disease (busuk pangkal batang)"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <!-- Deskripsi Aplikasi -->
+                <TextView
+                    android:layout_width="354dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text="Aplikasi ini dibuat sebagai tugas pengganti ujian akhir semester pada mata kuliah sistem pakar di jurusan \n Informatika Universitas Muhammadiyah Sorong.\n\nDosen Pengampu: Muhammad Yusuf, S.Kom"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <!-- Kelompok -->
+                <TextView
+                    android:layout_width="358dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text="Kelompok 19:\nFaizah Saputri (202155202098)"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/w2"
+                    app:layout_constraintBottom_toTopOf="@+id/appName"
+                    app:layout_constraintDimensionRatio="h,1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/tentangButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Tentang Pakar"
+        android:onClick="personal"
+        android:backgroundTint="#0EBE7F"
+    android:textColor="#FFFFFF"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
